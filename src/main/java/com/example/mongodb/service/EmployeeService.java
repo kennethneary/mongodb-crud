@@ -57,6 +57,6 @@ public class EmployeeService implements IEmployeeService {
 
     @Override
     public Iterable<Employee> getEmployeePaging(PageRequest pageRequest) {
-        return employeeRepository.findAllByIdNotNullOrderByIdAsc(pageRequest);
+        return employeeRepository.findAllByIdNotNullOrderByNameAsc(pageRequest);
     }
 }
